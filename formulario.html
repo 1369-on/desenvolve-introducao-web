@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulário de Pesquisa de Satisfação</title>
+</head>
+<body>
+  <h1>Pesquisa de Satisfação</h1>
+  <form action="#" method="post">
+    <fieldset>
+      <legend>Dados Pessoais</legend>
+      <p>
+        <label for="nome">Nome:</label><br>
+        <input type="text" id="nome" name="nome">
+      </p>
+      <p>
+        <label for="email">E-mail:</label><br>
+        <input type="email" id="email" name="email">
+      </p>
+      <p>
+        <label for="telefone">Telefone:</label><br>
+        <input type="tel" id="telefone" name="telefone">
+      </p>
+    </fieldset>
+    
+    <br>
+    
+    <fieldset>
+      <legend>Pesquisa</legend>
+      <p>Você ficou satisfeito com o atendimento?</p>
+      <p>
+        <input type="radio" id="satisfeito_sim" name="satisfacao" value="sim">
+        <label for="satisfeito_sim">Sim</label>
+      </p>
+      <p>
+        <input type="radio" id="satisfeito_nao" name="satisfacao" value="nao">
+        <label for="satisfeito_nao">Não</label>
+      </p>
+      <p>Você recomendaria nossos serviços?</p>
+      <p>
+        <input type="radio" id="recomenda_sim" name="recomendacao" value="sim">
+        <label for="recomenda_sim">Sim</label>
+      </p>
+      <p>
+        <input type="radio" id="recomenda_nao" name="recomendacao" value="nao">
+        <label for="recomenda_nao">Não</label>
+      </p>
+      <p>Como você avalia a qualidade do nosso produto?</p>
+      <p>
+        <select name="qualidade" id="qualidade">
+          <option value="">Selecione</option>
+          <option value="otimo">Ótimo</option>
+          <option value="bom">Bom</option>
+          <option value="regular">Regular</option>
+          <option value="ruim">Ruim</option>
+          <option value="pessimo">Péssimo</option>
+        </select>
+      </p>
+    </fieldset>
+    
+    <br>
+    
+    <p>
+      <input type="checkbox" id="compartilhar" name="compartilhar" value="sim">
+      <label for="compartilhar">Autorizo compartilhar minha resposta com terceiros</label>
+    </p>
+    
+    <br>
+    
+    <p>
+      <input type="submit" value="Enviar">
+    </p>
+  </form>
+</body>
+</html>
