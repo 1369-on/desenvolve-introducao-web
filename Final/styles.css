@@ -1,0 +1,135 @@
+/* Variáveis de fontes e cores */
+:root {
+  --fonte-titulo: 'Arial Black', sans-serif;
+  --fonte-texto: 'Arial', sans-serif;
+  --cor-principal: #2c3e50;
+  --cor-secundaria: #ecf0f1;
+  --cor-destaque: #e74c3c;
+}
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilização da navegação */
+nav {
+  background-color: var(--cor-principal);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  margin: 10px 15px;
+}
+
+nav ul li a {
+  color: var(--cor-secundaria);
+  text-decoration: none;
+  font-family: var(--fonte-texto);
+  font-weight: bold;
+}
+
+/* Espaço para compensar o menu fixo */
+body {
+  padding-top: 60px;
+  font-family: var(--fonte-texto);
+  background-color: var(--cor-secundaria);
+  color: var(--cor-principal);
+}
+
+/* Estilização do cabeçalho */
+header#apresentacao {
+  text-align: center;
+  padding: 20px;
+  background-color: var(--cor-secundaria);
+}
+
+header#apresentacao h1 {
+  font-family: var(--fonte-titulo);
+  font-size: 2.5em;
+  color: var(--cor-principal);
+}
+
+header#apresentacao img {
+  width: 150px;
+  height: auto;
+  border-radius: 50%;
+  margin: 20px 0;
+}
+
+/* Seções gerais */
+section {
+  padding: 40px 20px;
+}
+
+section h2 {
+  font-family: var(--fonte-titulo);
+  font-size: 2em;
+  border-bottom: 2px solid var(--cor-destaque);
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+/* Containers para registros */
+.container-escolaridade,
+.container-experiencia {
+  background-color: #fff;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+/* Lista de habilidades */
+#habilidades ul {
+  list-style: disc;
+  margin-left: 20px;
+}
+
+/* Rodapé */
+footer {
+  background-color: var(--cor-principal);
+  color: var(--cor-secundaria);
+  text-align: center;
+  padding: 20px;
+}
+
+footer ul.social-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+footer ul.social-links li {
+  margin: 0 10px;
+}
+
+footer ul.social-links li a {
+  color: var(--cor-secundaria);
+  text-decoration: none;
+}
+
+/* Layout responsivo */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+  }
+  
+  header#apresentacao img {
+    width: 120px;
+  }
+}

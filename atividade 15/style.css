@@ -1,0 +1,54 @@
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+footer a {
+  flex: 1 1 100px;
+  text-align: center;
+}
+
+.benefits {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+.benefits h3 {
+  order: 2;
+  flex: 0 0 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.benefits p {
+  order: 1;
+  flex: 0 0 70%;
+}
+
+.participation {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  margin-top: -1px;
+}
+
+.participation h3 {
+  flex: 0 0 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.participation p {
+  flex: 0 0 50%;
+}

@@ -1,0 +1,33 @@
+/* 1. Personalização dos links */
+a {
+  color: #0077cc;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #005599;
+}
+
+a:visited {
+  font-weight: normal;
+  color: #551a8b;
+}
+
+/* 2. Estilização da primeira letra do primeiro parágrafo da seção principal */
+.main p:first-of-type::first-letter {
+  font-size: 3em;
+  font-family: "Georgia", serif;
+  float: left;
+  margin-right: 5px;
+}
+
+/* 3. Estilização do menu de design */
+.design-selection ul li {
+  border-top: 1px solid #ccc;
+  padding: 5px 0;
+}
+
+.design-selection ul li:last-child {
+  border-bottom: 1px solid #ccc;
+}

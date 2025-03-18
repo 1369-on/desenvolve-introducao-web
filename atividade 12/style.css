@@ -1,0 +1,44 @@
+/* 1. Aspectos gerais */
+.page-wrapper {
+  max-width: 1200px; /* Tamanho fixo para a página */
+  margin: 0 auto; /* Centraliza a página */
+}
+
+body {
+  font-family: Arial, sans-serif; /* Fonte sans-serif */
+}
+
+p {
+  text-indent: 1em; /* Indentação dos parágrafos */
+}
+
+/* 2. Títulos */
+h1, h2, h3 {
+  text-align: center; /* Alinhamento centralizado */
+}
+
+h1 {
+  font-size: 1.8rem;
+}
+
+h2 {
+  font-size: 1.4rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+}
+
+/* 3. Seções de resumo e principal */
+.summary {
+  text-align: right; /* Alinhamento à direita para resumo */
+}
+
+.main.supporting p {
+  line-height: 1.5; /* Espaçamento entre linhas na seção principal */
+}
+
+/* 4. Abreviaturas */
+abbr {
+  font-variant: small-caps; /* Fonte em small-caps */
+}

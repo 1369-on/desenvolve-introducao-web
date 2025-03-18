@@ -1,0 +1,38 @@
+/* Estilos padrão */
+
+/* Media Query para telas menores que 768px (Layout Mobile) */
+@media (max-width: 768px) {
+    .design-selection {
+        position: static;
+    }
+    
+    .page-wrapper {
+        border: none;
+    }
+    
+    .main {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    header {
+        height: auto;
+    }
+    
+    p {
+        margin-top: 0;
+    }
+}
+
+/* Media Query para impressão */
+@media print {
+    body {
+        font-family: "Times New Roman", Times, serif;
+    }
+    
+    header {
+        background-color: white;
+        color: black;
+    }
+}

@@ -1,0 +1,68 @@
+/* 1. Diretivas gerais para a página */
+/* Define largura de 80% com no máximo 1280px e centraliza a página */
+.page-wrapper {
+  width: 80%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+/* Define a altura da seção de introdução */
+.intro {
+  height: 550px;
+}
+
+/* Remove o container #design-archives da renderização */
+#design-archives {
+  display: none;
+}
+
+/* 2. Incremento do cabeçalho */
+/* Inverte as cores do cabeçalho: fundo escuro e fonte clara */
+header {
+  background-color: #000;
+  color: #fff;
+  padding: 1em;
+  /* Coloca título e subtítulo lado a lado */
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1em;  /* espaçamento entre os elementos dentro do header */
+}
+
+/* Adiciona espaçamento lateral de 1em para o título principal */
+header h1 {
+  margin-left: 1em;
+}
+
+/* 3. Incremento dos menus */
+/* Remove os bullets dos itens de menu e centraliza os itens */
+.sidebar nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+/* Aumenta o espaçamento entre os itens de menu */
+.sidebar nav ul li {
+  margin-bottom: 1em;
+}
+
+/* 4. Inversão de cores e estilização do rodapé */
+/* Inverte as cores do rodapé para contraste e adiciona espaçamento externo de 4% */
+footer {
+  background-color: #000;
+  color: #fff;
+  padding: 4%;
+  text-align: center;
+}
+
+/* Transforma cada link do rodapé em uma caixa com borda e espaçamento interno */
+footer a {
+  display: inline-block;
+  border: 2px solid currentColor;
+  padding: 0.5em;
+  margin: 0.2em; /* opcional: espaçamento entre as caixas de link */
+  color: inherit; /* mantém a cor clara do texto */
+  text-decoration: none;
+}
